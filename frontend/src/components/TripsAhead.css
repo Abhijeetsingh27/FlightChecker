@@ -1,0 +1,90 @@
+/* Styles for the Trips Ahead container */
+.trips-ahead-container {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #673ab7; /* Accent color */
+}
+
+.trips-ahead-container .trips-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.trips-ahead-container h3 {
+  color: #333;
+  margin: 0;
+  font-size: 20px;
+}
+
+.trips-ahead-container .trips-list {
+  display: grid; /* Use grid for a nice layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between trip items */
+}
+
+.trips-ahead-container .trip-item {
+  background-color: #f8f9fa; /* Light background for items */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.trips-ahead-container .trip-item:hover {
+    transform: translateY(-5px); /* Simple hover animation */
+}
+
+
+.trips-ahead-container .trip-item h4 {
+  color: #673ab7; /* Matching accent color */
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.trips-ahead-container .trip-item p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #555;
+}
+
+.trips-ahead-container .close-trips-button {
+    background-color: #f0f0f0; /* Light grey */
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.trips-ahead-container .close-trips-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style for the button in the header */
+.app-header .trips-ahead-button {
+  background-color: #ff9800; /* Orange */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.app-header .trips-ahead-button:hover {
+  background-color: #fb8c00; /* Darker orange */
+} 

@@ -1,0 +1,133 @@
+/* Basic styles for overall layout */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+}
+
+/* Header styles */
+.app-header {
+  background-color: #673ab7; /* Deep purple */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.app-header .main-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.app-header .main-nav a:hover {
+  color: #b39ddb; /* Lighter purple */
+}
+
+.app-header .user-profile {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.app-header .user-profile span {
+  margin-right: 15px;
+}
+
+.app-header .sign-out-button {
+  background-color: #e57373; /* Light red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.app-header .sign-out-button:hover {
+  background-color: #ef9a9a; /* Lighter red */
+}
+
+
+/* Main content area */
+.app-main-content {
+  flex-grow: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content-section {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.content-section h2 {
+  color: #333;
+  border-bottom: 2px solid #673ab7;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Footer styles */
+.app-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* Add some basic animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.homepage-container, .content-section {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Add more specific styles for forms, inputs, buttons within sections as needed */
+/* Example (you might have these in other files): */
+.content-section input[type="text"],
+.content-section input[type="email"],
+.content-section input[type="tel"],
+.content-section button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.content-section button {
+    background-color: #1a73e8; /* Example blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-section button:hover {
+    background-color: #0f5ecb;
+} 
